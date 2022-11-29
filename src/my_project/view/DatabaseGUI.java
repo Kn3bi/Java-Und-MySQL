@@ -36,7 +36,7 @@ public class DatabaseGUI {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // todo 1 Es wird eine SQL-Verbindung hergestellt (Database-Controller verwenden)
-                programController.getDBC().connect();
+
             }
         });
     }
