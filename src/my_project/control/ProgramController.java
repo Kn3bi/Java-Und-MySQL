@@ -18,7 +18,6 @@ public class ProgramController {
 
     // Referenzen
     private ViewController viewController;  // diese Referenz soll auf ein Objekt der Klasse viewController zeigen. Über dieses Objekt wird das Fenster gesteuert.
-    private DatabaseController dbc;
 
     /**
      * Konstruktor
@@ -36,12 +35,8 @@ public class ProgramController {
      */
     public void startProgram() {
         viewController.getDrawFrame().setContentPane(new DatabaseGUI(this).getMainPanel());
-        dbc = new DatabaseController();
-    }
 
-    public DatabaseController getDBC(){
-        return dbc;
-    };
+    }
 
     public void closeProgram(){
         // todo 2 Eine eventuelle Datenbankverbindung wird geschlossen. Danach wird das Programm beendet.
